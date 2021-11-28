@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lateef&display=swap");
+
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(51, 49, 49, 0.912)
+    ),
+    url(/img/male-hand-answering-questionary-form-with-pen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#headerPage {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+}
+#description {
+  font-size: 35px;
+  color: rgb(58, 15, 15);
+}
+#main {
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgba(111, 111, 111, 0.44);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: white;
+  padding: 30px;
+}
+#main div:not(#diseases) {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+}
+.parts label,
+#symp-para,
+#dis-para {
+  padding-bottom: 15px;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select,
+button {
+  border: none;
+  width: 90%;
+  height: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#symp #symptoms {
+  margin: 0px;
+  padding: 0px;
+}
+table {
+  border-collapse: separate; /* allow spacing between cell borders */
+  border-spacing: 1px 15px; /* NOTE: syntax is <horizontal value> <vertical value> */
+}
+
+th {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+td {
+  padding: 6px;
+  font-size: 20px;
+  width: 20%;
+  text-align: center;
+}
+td:first-child {
+  text-align: left;
+  font-size: 25px;
+}
+input[type="radio"] {
+  border: 0px;
+  width: 80%;
+  height: 30px;
+}
+input[type="checkbox"] {
+  border: 0px;
+  width: 20%;
+  height: 30px;
+}
+
+@media (max-width: 500px) {
+  #main {
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #main div:not(#diseases) {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 10px;
+  }
+  .parts label,
+  #symp-para,
+  #dis-para {
+    padding-bottom: 15px;
+    font-size: 25px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select,
+  button {
+    border: none;
+    width: 90%;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  table {
+    border-collapse: none; /* allow spacing between cell borders */
+    border-spacing: 0px 0px; /* NOTE: syntax is <horizontal value> <vertical value> */
+  }
+
+  th {
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+  td {
+    padding: 0;
+    padding-left: 5px;
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+  }
+  td:first-child {
+    text-align: left;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  input[type="radio"] {
+    border: 0px;
+    width: auto;
+    height: auto;
+  }
+}
